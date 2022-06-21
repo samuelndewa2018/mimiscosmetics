@@ -1,0 +1,84 @@
+.support {
+  background-image: url(https://image.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+.animation {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: pink;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  border: none;
+  animation: zoom 3s linear infinite;
+}
+.supportForm {
+  width: 400px;
+  margin: auto;
+  padding: 20px 0px;
+  position: relative;
+}
+#supportInput {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(59, 183, 126);
+  border-left: none;
+  border-image: initial;
+  outline: none;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 1.2vmax !important;
+  height: 40px;
+}
+.supportTextarea {
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(59, 183, 126);
+  border-left: none;
+  border-image: initial;
+  outline: none;
+  width: 100%;
+  margin: 10px 0px;
+  font-size: 1.2vmax;
+}
+.supportBtn {
+  border: none;
+  outline: none !important;
+  cursor: pointer;
+  width: 100%;
+  background: rgb(59, 183, 126);
+  height: 40px;
+  margin: 10px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2vmax;
+  border-radius: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+@keyframes zoom {
+  0%,
+  100% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+}
+@media screen and (max-width: 600px) {
+  .support__headingInput {
+    font-size: 3.2vmax;
+  }
+  .supportForm {
+    width: 97% !important;
+    margin: auto;
+    padding: 20px 8px;
+    position: relative;
+  }
+  #supportInput,
+  .supportTextarea,
+  .supportBtn {
+    font-size: 2.5vmax !important;
+  }
+}
